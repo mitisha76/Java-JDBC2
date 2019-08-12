@@ -1,0 +1,26 @@
+create database quiz;
+use quiz;
+drop table questions;
+drop table userdata;
+
+desc  userdata;
+create table userdata(Name varchar(30), Email_id varchar(100) not null, Pass varchar(10), Registration_Date varchar(10) not null);
+select * from questions;
+select * from userdata;
+drop table questions;
+create table questions(	Q_id int primary key, Question varchar(10000) not null, A varchar(10000), B varchar(10000), C varchar(10000), D varchar(10000), ANS int);
+insert into questions values(1, 'Which of this keyword can be used in a subclass to call the constructor of superclass?',' Super', 'This', 'Extent','Extends', 1);
+insert into questions values(2,'Which of these keywords can be used to prevent Method overriding?','MethodOverloading','MethodOverriding','MethodHiding','None',2);
+insert into questions values(3,'Which of these method of class String is used to compare two String objects for their equality?','equals()','Equals()','isequal()','Isequal()',1);
+insert into questions values(4,'Which of these data type value is returned by equals() method of String class?','char','int','Boolean','All',3);
+insert into questions values(5,' The descriptive property possessed by each entity set is _________ ','Entity','Attribute','Relation','Model',2);
+insert into questions values(6,'The function that an entity plays in a relationship is called that entity’s _____________','Participation','Position','Role','Instance',3);
+insert into questions values(7,'Not applicable condition can be represented in relation entry as','NA','Zero','Null','BlankSpace',3);
+insert into questions values(8,'Which of the following can be a multivalued attribute?','Phone_number','Name',' Date_of_birth','All',1);
+insert into questions values(9,' Entity is a _________','Object_of_relation','Present_working_model','Thing_in_real_world','Model_of_relation',3);
+insert into questions values(10,' In a relation between the entities the type and condition of the relation should be specified. That is called as______attribute.',' Desciptive','Derived','Recursive','Relative',1);
+
+
+
+
+
